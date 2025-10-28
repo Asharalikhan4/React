@@ -1,0 +1,28 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "react-learning",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Ashar Ali Khan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react-dom": "^19.2.1",
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/react": "^19.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-icons": "^5.5.0",
+    "react-router": "^7.9.4",
+    "tailwindcss": "^4.1.14"
+  }
+}
