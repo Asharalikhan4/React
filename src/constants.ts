@@ -33,5 +33,10 @@ export const routes = [
     id: 4,
     name: "useRef Hook",
     path: "/use-ref-hook"
+  },
+  {
+    id: 5,
+    name: "usePrevious Hook",
+    path: "/use-previous-hook"
   }
 ];
