@@ -58,5 +58,10 @@ export const routes = [
     id: 9,
     name: "useMemo Hook",
     path: "use-memo-hook"
+  },
+  {
+    id: 10,
+    name: "Memo Api",
+    path: "memo-api"
   }
 ];
