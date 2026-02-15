@@ -53,5 +53,10 @@ export const routes = [
     id: 8,
     name: "useEffect Hook",
     path: "use-effect-hook"
+  },
+  {
+    id: 9,
+    name: "useMemo Hook",
+    path: "use-memo-hook"
   }
 ];
