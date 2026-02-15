@@ -21,8 +21,8 @@ export const routes = [
   },
   {
     id: 2,
-    name: "Deboucing",
-    path: "/deboucing"
+    name: "Debouncing",
+    path: "/debouncing"
   },
   {
     id: 3,
@@ -38,5 +38,20 @@ export const routes = [
     id: 5,
     name: "usePrevious Hook",
     path: "/use-previous-hook"
+  },
+  {
+    id: 6,
+    name: "useAsync Hook",
+    path: "use-async-hook"
+  },
+  {
+    id: 7,
+    name: "useState Hook",
+    path: "use-state-hook"
+  },
+  {
+    id: 8,
+    name: "useEffect Hook",
+    path: "use-effect-hook"
   }
 ];
