@@ -63,5 +63,10 @@ export const routes = [
     id: 10,
     name: "Memo Api",
     path: "memo-api"
+  },
+  {
+    id: 11,
+    name: "Throttling",
+    path: "throttling"
   }
 ];
