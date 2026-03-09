@@ -12,9 +12,9 @@ useEffect()
 
 import { useEffect, useRef } from "react";
 
-export default function usePrevious(value: any) {
+export default function usePrevious(value: number): number {
   // create a new reference
-  const ref = useRef();
+  const ref = useRef<number>(0);
 
   // store current value in ref
   useEffect(() => {
