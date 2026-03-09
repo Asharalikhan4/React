@@ -2,9 +2,9 @@ import { useState } from "react";
 import usePrevious from "../../customHooks/usePrevious";
 
 const UsePreviousHook = () => {
-  
-  const [count, setCount] = useState(0);
-  const prevCount: any = usePrevious(count);
+  console.log("UsePreviousHook Render");
+  const [count, setCount] = useState<number>(0);
+  const prevCount: number = usePrevious(count);
   
   return (
     <div>
@@ -13,8 +13,8 @@ const UsePreviousHook = () => {
         Now: {count}, before: {prevCount}
       </h1>
       <div className="flex gap-2">
-        <button onClick={() => setCount(count - 1)}>Decrement</button>
-        <button onClick={() => setCount(count + 1)}>Increment</button>
+        <button onClick={() => setCount(prev => prev - 1)}>Decrement</button>
+        <button onClick={() => setCount(prev => prev + 1)}>Increment</button>
       </div>
     </div>
   );
