@@ -1,8 +1,9 @@
 # Provider data passing pattern in React
 
-- Props drill down is the most expensive way to pass data around the children in Reactjs and also the cause for many bugs, from parent to children to grandchildren, every time the props are passed, it has to be manually written in the child component's code for which props has to be passed down further.
+Props drill down is the most expensive way to pass data around the children in Reactjs and also the cause for many bugs, from parent to children to grandchildren, every time the props are passed, it has to be manually written in the child component's code for which props has to be passed down further.
 
-- For example, check out this code:
+For example, check out this code:
+
 ```javascript
 const Parent = () => {
   const topic = { title: "Tech", articles: [{ title: "web3", content: "" }] };
@@ -40,17 +41,17 @@ const Main = ({ articles }) => {
 };
 ```
 
-- In this example, the props have to go through each child and be passed down further to get accessed. There will be many cases where many of the children do not even need to make use of the props, but grandchildren thus, so they have to accept and pass them down.
+In this example, the props have to go through each child and be passed down further to get accessed. There will be many cases where many of the children do not even need to make use of the props, but grandchildren thus, so they have to accept and pass them down.
 
 ![Related Image](../public/images/Props-Drill-Down-in-Reactjs1.webp)
 
-- These props drill down results in unnecessary re-renders impacting the performance of the applications, Also at any stage the key of the props changes, it has to be manually updated in the code of each component where it is being used.
+These props drill down results in unnecessary re-renders impacting the performance of the applications, Also at any stage the key of the props changes, it has to be manually updated in the code of each component where it is being used.
 
-- We can avoid the props drill down by implementing the provider design pattern in Reactjs with the help of context API
+We can avoid the props drill down by implementing the provider design pattern in Reactjs with the help of context API
 
 ## Implementing provider pattern in Reactjs
 
-- React provides context API, using which a new context can be created and this context can be accessed in any child of the component that is wrapped in its provider.
+React provides context API, using which a new context can be created and this context can be accessed in any child of the component that is wrapped in its provider.
 
 ```javascript
 const FeatureContext = React.createContext()
@@ -69,7 +70,7 @@ function App() {
 }
 ```
 
-- This way only the components that need the props can access it and other components don't have to worry about the props any more.
+This way only the components that need the props can access it and other components don't have to worry about the props any more.
 
 ```javascript
 const FeatureContext = React.createContext();
@@ -82,8 +83,9 @@ const Main = () => {
 
 ![Related Image](../public/images/Accessing-props-through-context-provider-in-Reactjs1.webp)
 
-- One of the most important use cases of provider design pattern is implementing the feature flag.
-- Feature flag allows to make use of the features only if they are available. We can create a feature flag provider and in all those components where features are supposed to be used, we can access it.
+One of the most important use cases of provider design pattern is implementing the feature flag.
+
+Feature flag allows to make use of the features only if they are available. We can create a feature flag provider and in all those components where features are supposed to be used, we can access it.
 
 ```javascript
 import React, { useEffect, useState } from "react";
@@ -120,11 +122,11 @@ const App = () => {
 };
 ```
 
-- This helps in doing the A/B testing and enabling and disabling features on demand externally without making any code changes.
+This helps in doing the A/B testing and enabling and disabling features on demand externally without making any code changes.
 
-- Though react provides many different libraries for global state management using hooks like Zustand using which we can avoid the props drill down. They are suitable for large codebases, for smaller ones you can still stick with the context API.
+Though react provides many different libraries for global state management using hooks like Zustand using which we can avoid the props drill down. They are suitable for large codebases, for smaller ones you can still stick with the context API.
 
-- Provider pattern is very powerful but it should be used wisely as if the data changes, all the component that is accessing the context will re-render.
+Provider pattern is very powerful but it should be used wisely as if the data changes, all the component that is accessing the context will re-render.
 
-- Thus it is better to normalize the data and split them in different providers as per the logic to enhance the performance.
+Thus it is better to normalize the data and split them in different providers as per the logic to enhance the performance.
 
