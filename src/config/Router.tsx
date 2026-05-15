@@ -11,6 +11,19 @@ import UseMemoHook from "../screens/ReactDefaultHooks/UseMemoHook/UseMemoHook";
 import MemoApi from "../screens/ReactDefaultApi's/MemoApi/MemoApi";
 import Throttling from "../screens/Throttling/Throttling";
 import UseRefHook from "../screens/ReactDefaultHooks/UseRefHook/UseRefHook";
+import LazyLoading from "../screens/LazyLoadingScreen/LazyLoading";
+import EventBubblingAndCapturingAkaTrickling from "../screens/Event Bubbling, Capturing aka Trickling in Javascript/Event Bubbling, Capturing aka Trickling in Javascript";
+import UseIdleHook from "../screens/UseIdleHook/UseIdleHook";
+import SearchWithAutoComplete from "../screens/SearchWithAutoComplete";
+import CookiesSessionLocalStorageIndexdb from "../screens/StateManagement/CookiesSessionLocalStorageIndexdb";
+import LocalStorage from "../screens/StateManagement/LocalStorage";
+import SessionStorage from "../screens/StateManagement/SessionStorage";
+import IndexDB from "../screens/StateManagement/IndexDB";
+import CreateANestedCheckboxTreeComponent from "../LowLevelDesignAndMachineCoding/CreateANestedCheckboxTreeComponent";
+import ImplementFeatureFlagComponentInReact from "../LowLevelDesignAndMachineCoding/ImplementFeatureFlagComponentInReact/ImplementFeatureFlagComponentInReact";
+import FeatureFlagProvider from "../LowLevelDesignAndMachineCoding/ImplementFeatureFlagComponentInReact/FeatureFlagContext";
+import SwitchCaseComponentInReact from "../LowLevelDesignAndMachineCoding/SwitchCaseComponentInReact/SwitchCaseComponentInReact";
+import TwoStepLoginForm from "../LowLevelDesignAndMachineCoding/TwoStepLoginForm/TwoStepLoginForm";
 
 const Router = () => {
   return (
@@ -27,6 +40,32 @@ const Router = () => {
       <Route path="/memo-api" element={<MemoApi />} />
       <Route path="/throttling" element={<Throttling />} />
       <Route path="/use-ref-hook" element={<UseRefHook />} />
+      <Route path="/lazy-loading" element={<LazyLoading />} />
+      <Route
+        path="EventBubblingAndCapturingAkaTrickling"
+        element={<EventBubblingAndCapturingAkaTrickling />}
+      />
+      <Route path="/useIdleHook" element={<UseIdleHook />} />
+      <Route
+        path="/search-with-autocomplete"
+        element={<SearchWithAutoComplete />}
+      />
+      <Route
+        path="/state-management/cookies-session-local-storage-indexdb"
+        element={<IndexDB />}
+      />
+      <Route
+        path="/low-level-design-and-machine-coding/create-a-nested-checkbox-tree-component"
+        element={<CreateANestedCheckboxTreeComponent />}
+      />
+      <Route
+        path="low-level-design-and-machine-coding/implement-feature-flag-component-in-react"
+        element={<FeatureFlagProvider><ImplementFeatureFlagComponentInReact /></FeatureFlagProvider>}
+      />
+      <Route path="/low-level-design-and-machine-coding/switch-case-component-in-react"
+        element={<SwitchCaseComponentInReact />} />
+      <Route path="/low-level-design-and-machine-coding/two-step-login-form"
+        element={<TwoStepLoginForm />} />
     </Routes>
   );
 };

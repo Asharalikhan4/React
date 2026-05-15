@@ -68,5 +68,56 @@ export const routes = [
     id: 11,
     name: "Throttling",
     path: "throttling"
+  },
+  {
+    id: 12,
+    name: "Lazy Loading",
+    path: "lazy-loading"
+  },
+  {
+    id: 13,
+    name: "useIdle Hook",
+    path: "useIdleHook"
+  },
+  {
+    id: 14,
+    name: "Search With AutoComplete",
+    path: "search-with-autocomplete"
+  },
+  {
+    id: 15,
+    name: "State Management",
+    path: ""
   }
 ];
+
+
+export const routesData = [
+  {
+    id: 1, 
+    name: "Low-Level Design & Machine Coding",
+    path: "/low-level-design-and-machine-coding",
+    children: [
+      {
+        id: 1,
+        name: "Implement Feature Flag Component in React",
+        path: "implement-feature-flag-component-in-react"
+      },
+      {
+        id: 4,
+        name: "Switch-Case component in React",
+        path: "switch-case-component-in-react"
+      },
+      {
+        id: 5,
+        name: "Create A Nested Checkbox Tree Component",
+        path: "create-a-nested-checkbox-tree-component"
+      },
+      {
+        id: 5,
+        name: "Two Step Login Form",
+        path: "two-step-login-form"
+      }
+    ]
+  }
+]
