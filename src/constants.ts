@@ -117,6 +117,11 @@ export const routesData = [
         id: 5,
         name: "Two Step Login Form",
         path: "two-step-login-form"
+      },
+      {
+        id: 6,
+        name: "ToDo List",
+        path: "todo-list"
       }
     ]
   }

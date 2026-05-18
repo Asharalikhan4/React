@@ -24,6 +24,7 @@ import ImplementFeatureFlagComponentInReact from "../LowLevelDesignAndMachineCod
 import FeatureFlagProvider from "../LowLevelDesignAndMachineCoding/ImplementFeatureFlagComponentInReact/FeatureFlagContext";
 import SwitchCaseComponentInReact from "../LowLevelDesignAndMachineCoding/SwitchCaseComponentInReact/SwitchCaseComponentInReact";
 import TwoStepLoginForm from "../LowLevelDesignAndMachineCoding/TwoStepLoginForm/TwoStepLoginForm";
+import TodoList from "../LowLevelDesignAndMachineCoding/ToDoList/ToDoList";
 
 const Router = () => {
   return (
@@ -66,6 +67,8 @@ const Router = () => {
         element={<SwitchCaseComponentInReact />} />
       <Route path="/low-level-design-and-machine-coding/two-step-login-form"
         element={<TwoStepLoginForm />} />
+      <Route path="/low-level-design-and-machine-coding/todo-list"
+          element={<TodoList />} />
     </Routes>
   );
 };
