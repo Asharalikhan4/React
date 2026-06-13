@@ -25,13 +25,15 @@ import FeatureFlagProvider from "../LowLevelDesignAndMachineCoding/ImplementFeat
 import SwitchCaseComponentInReact from "../LowLevelDesignAndMachineCoding/SwitchCaseComponentInReact/SwitchCaseComponentInReact";
 import TwoStepLoginForm from "../LowLevelDesignAndMachineCoding/TwoStepLoginForm/TwoStepLoginForm";
 import TodoList from "../LowLevelDesignAndMachineCoding/ToDoList/ToDoList";
+import SearchWithPagingation from "../LowLevelDesignAndMachineCoding/SearchWithPagination/SearchWithPagination";
+import InfiniteScrollInReact from "../LowLevelDesignAndMachineCoding/InfiniteScrollInReact/InfiniteScrollInReact";
 
 const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<HomeScreen />} />
       <Route path="/throw-error" element={<ThrowErrorScreen />} />
-      <Route path="/debouncing" element={<DebounceSearchBar />} />
+      <Route path="/react-hooks/use-debounce-hook" element={<DebounceSearchBar />} />
       <Route path="/use-reducer-hook" element={<UseReducerHook />} />
       <Route path="/use-previous-hook" element={<UsePreviousHook />} />
       <Route path="/use-async-hook" element={<UseAsyncHook />} />
@@ -68,7 +70,9 @@ const Router = () => {
       <Route path="/low-level-design-and-machine-coding/two-step-login-form"
         element={<TwoStepLoginForm />} />
       <Route path="/low-level-design-and-machine-coding/todo-list"
-          element={<TodoList />} />
+        element={<TodoList />} />
+      <Route path="/low-level-design-and-machine-coding/search-with-pagination" element={<SearchWithPagingation />} />
+      <Route path="/low-level-design-and-machine-coding/infinite-scroll-in-react" element={<InfiniteScrollInReact />} />
     </Routes>
   );
 };

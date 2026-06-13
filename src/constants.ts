@@ -94,7 +94,19 @@ export const routes = [
 
 export const routesData = [
   {
-    id: 1, 
+    id: 1,
+    name: "React Hooks",
+    path: "/react-hooks",
+    children: [
+      {
+        id: 1,
+        name: "useDebounce() hook",
+        path: "use-debounce-hook"
+      }
+    ]
+  },
+  {
+    id: 2,
     name: "Low-Level Design & Machine Coding",
     path: "/low-level-design-and-machine-coding",
     children: [
@@ -110,6 +122,11 @@ export const routesData = [
       },
       {
         id: 5,
+        name: "Infinite Scroll In React",
+        path: "infinite-scroll-in-react"
+      },
+      {
+        id: 5,
         name: "Create A Nested Checkbox Tree Component",
         path: "create-a-nested-checkbox-tree-component"
       },
@@ -122,7 +139,16 @@ export const routesData = [
         id: 6,
         name: "ToDo List",
         path: "todo-list"
+      },
+      {
+        id: 7,
+        name: "Search With Pagination",
+        path: "/search-with-pagination"
       }
     ]
   }
-]
+];
+
+export const TODOS_API_URL = "https://jsonplaceholder.typicode.com/todos";
+
+export const BEERS_API_URL = ""

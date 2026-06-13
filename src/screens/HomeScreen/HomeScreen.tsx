@@ -72,7 +72,7 @@ const HomeScreen = () => {
           {theme === "light" ? <FaSun size={22} /> : <FaMoon size={22} />}
         </div>*/}
       </div>
-      <div className="mt-2 italic flex flex-col gap-1">
+      {/*<div className="mt-2 italic flex flex-col gap-1">
         {routes.map((route) => (
           <NavLink
             key={route.id}
@@ -82,9 +82,8 @@ const HomeScreen = () => {
             {route.name}
           </NavLink>
         ))}
-      </div>
+      </div>*/}
       <div className="mt-6">
-        <div className="text-lg font-semibold">Nested Sections</div>
         {renderRouteTree(routesData)}
       </div>
     </div>
