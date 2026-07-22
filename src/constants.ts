@@ -13,84 +13,6 @@ export const useReducerLinearInitialState = {
   address: "test address"
 };
 
-export const routes = [
-  {
-    id: 1,
-    name: "Throw Error Screen",
-    path: "/throw-error"
-  },
-  {
-    id: 2,
-    name: "Debouncing",
-    path: "/debouncing"
-  },
-  {
-    id: 3,
-    name: "useReducer Hook",
-    path: "/use-reducer-hook"
-  },
-  {
-    id: 4,
-    name: "useRef Hook",
-    path: "/use-ref-hook"
-  },
-  {
-    id: 5,
-    name: "usePrevious Hook",
-    path: "/use-previous-hook"
-  },
-  {
-    id: 6,
-    name: "useAsync Hook",
-    path: "use-async-hook"
-  },
-  {
-    id: 7,
-    name: "useState Hook",
-    path: "use-state-hook"
-  },
-  {
-    id: 8,
-    name: "useEffect Hook",
-    path: "use-effect-hook"
-  },
-  {
-    id: 9,
-    name: "useMemo Hook",
-    path: "use-memo-hook"
-  },
-  {
-    id: 10,
-    name: "Memo Api",
-    path: "memo-api"
-  },
-  {
-    id: 11,
-    name: "Throttling",
-    path: "throttling"
-  },
-  {
-    id: 12,
-    name: "Lazy Loading",
-    path: "lazy-loading"
-  },
-  {
-    id: 13,
-    name: "useIdle Hook",
-    path: "useIdleHook"
-  },
-  {
-    id: 14,
-    name: "Search With AutoComplete",
-    path: "search-with-autocomplete"
-  },
-  {
-    id: 15,
-    name: "State Management",
-    path: ""
-  }
-];
-
 
 export const routesData = [
   {
@@ -116,9 +38,14 @@ export const routesData = [
         path: "implement-feature-flag-component-in-react"
       },
       {
+        id: 2,
+        name: "Implement Multi Stepper Component",
+        path: "multi-stepper-component"
+      },
+      {
         id: 4,
-        name: "Switch-Case component in React",
-        path: "switch-case-component-in-react"
+        name: "Switch-Case component",
+        path: "switch-case-component"
       },
       {
         id: 5,
@@ -126,14 +53,14 @@ export const routesData = [
         path: "infinite-scroll-in-react"
       },
       {
-        id: 5,
-        name: "Create A Nested Checkbox Tree Component",
-        path: "create-a-nested-checkbox-tree-component"
+        id: 6,
+        name: "Two Step Login Form",
+        path: "two-step-login-form"
       },
       {
         id: 5,
-        name: "Two Step Login Form",
-        path: "two-step-login-form"
+        name: "Create A Nested Checkbox Tree Component",
+        path: "create-a-nested-checkbox-tree-component"
       },
       {
         id: 6,
@@ -144,6 +71,47 @@ export const routesData = [
         id: 7,
         name: "Search With Pagination",
         path: "/search-with-pagination"
+      },
+      {
+        id: 9,
+        name: "Responsive Slide Show",
+        path: "responsive-slideshow"
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: "Abhibus - SDE2",
+    path: "/abhibus",
+    children: [
+      {
+        id: 1,
+        name: "Editable ToDo List",
+        path: "editable-todo-list"
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: "Zamp.ai",
+    path: "/zampai",
+    children: [
+      {
+        id: 1,
+        name: "Nested Comments",
+        path: "nested-comments"
+      }
+    ]
+  },
+  {
+    id: 5,
+    name: "ThoughtSpot",
+    path: "/thoughtspot",
+    children: [
+      {
+        id: 1,
+        name: "useMemo() Hook Polyfill",
+        path: "use-memo-polyfill"
       }
     ]
   }

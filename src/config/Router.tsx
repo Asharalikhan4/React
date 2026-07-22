@@ -22,11 +22,16 @@ import IndexDB from "../screens/StateManagement/IndexDB";
 import CreateANestedCheckboxTreeComponent from "../LowLevelDesignAndMachineCoding/CreateANestedCheckboxTreeComponent";
 import ImplementFeatureFlagComponentInReact from "../LowLevelDesignAndMachineCoding/ImplementFeatureFlagComponentInReact/ImplementFeatureFlagComponentInReact";
 import FeatureFlagProvider from "../LowLevelDesignAndMachineCoding/ImplementFeatureFlagComponentInReact/FeatureFlagContext";
-import SwitchCaseComponentInReact from "../LowLevelDesignAndMachineCoding/SwitchCaseComponentInReact/SwitchCaseComponentInReact";
+import SwitchCaseComponent from "../LowLevelDesignAndMachineCoding/SwitchCaseComponent/SwitchCaseComponent";
 import TwoStepLoginForm from "../LowLevelDesignAndMachineCoding/TwoStepLoginForm/TwoStepLoginForm";
 import TodoList from "../LowLevelDesignAndMachineCoding/ToDoList/ToDoList";
 import SearchWithPagingation from "../LowLevelDesignAndMachineCoding/SearchWithPagination/SearchWithPagination";
 import InfiniteScrollInReact from "../LowLevelDesignAndMachineCoding/InfiniteScrollInReact/InfiniteScrollInReact";
+import ResponsiveSlideshow from "../LowLevelDesignAndMachineCoding/ResponsiveSlideshow/ResponsiveSlideshow";
+import EditableToDoList from "../LowLevelDesignAndMachineCoding/EditableToDoList/EditableToDoList";
+import CreateNestedCommentsInReact from "../LowLevelDesignAndMachineCoding/CreateNestedCommentsInReact/CreateNestedCommentsInReact";
+import UseMemoHookPolyfill from "../screens/useMemoHookPolyfill/useMemoHookPolyfill";
+import MultiStepperComponent from "../LowLevelDesignAndMachineCoding/MultiStepperComponent/MultiStepperComponent";
 
 const Router = () => {
   return (
@@ -65,14 +70,22 @@ const Router = () => {
         path="low-level-design-and-machine-coding/implement-feature-flag-component-in-react"
         element={<FeatureFlagProvider><ImplementFeatureFlagComponentInReact /></FeatureFlagProvider>}
       />
-      <Route path="/low-level-design-and-machine-coding/switch-case-component-in-react"
-        element={<SwitchCaseComponentInReact />} />
+      <Route
+        path="low-level-design-and-machine-coding/multi-stepper-component"
+        element={<MultiStepperComponent />}
+      />
+      <Route path="/low-level-design-and-machine-coding/switch-case-component"
+        element={<SwitchCaseComponent />} />
       <Route path="/low-level-design-and-machine-coding/two-step-login-form"
         element={<TwoStepLoginForm />} />
       <Route path="/low-level-design-and-machine-coding/todo-list"
         element={<TodoList />} />
       <Route path="/low-level-design-and-machine-coding/search-with-pagination" element={<SearchWithPagingation />} />
       <Route path="/low-level-design-and-machine-coding/infinite-scroll-in-react" element={<InfiniteScrollInReact />} />
+      <Route path="/low-level-design-and-machine-coding/responsive-slideshow" element={<ResponsiveSlideshow />} />
+      <Route path="/abhibus/editable-todo-list" element={<EditableToDoList />} />
+      <Route path="/zampAi/nested-comments" element={<CreateNestedCommentsInReact />} />
+      <Route path="/thoughtspot/use-memo-polyfill" element={<UseMemoHookPolyfill />} />
     </Routes>
   );
 };
