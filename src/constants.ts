@@ -76,6 +76,11 @@ export const routesData = [
         id: 9,
         name: "Responsive Slide Show",
         path: "responsive-slideshow"
+      },
+      {
+        id: 12,
+        name: "Functional Modal Component",
+        path: "functional-modal-component"
       }
     ]
   },

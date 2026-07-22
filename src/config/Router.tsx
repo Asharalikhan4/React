@@ -32,6 +32,7 @@ import EditableToDoList from "../LowLevelDesignAndMachineCoding/EditableToDoList
 import CreateNestedCommentsInReact from "../LowLevelDesignAndMachineCoding/CreateNestedCommentsInReact/CreateNestedCommentsInReact";
 import UseMemoHookPolyfill from "../screens/useMemoHookPolyfill/useMemoHookPolyfill";
 import MultiStepperComponent from "../LowLevelDesignAndMachineCoding/MultiStepperComponent/MultiStepperComponent";
+import FunctionalModalComponent from "../LowLevelDesignAndMachineCoding/FunctionalModalComponent/FunctionalModalComponent";
 
 const Router = () => {
   return (
@@ -83,6 +84,7 @@ const Router = () => {
       <Route path="/low-level-design-and-machine-coding/search-with-pagination" element={<SearchWithPagingation />} />
       <Route path="/low-level-design-and-machine-coding/infinite-scroll-in-react" element={<InfiniteScrollInReact />} />
       <Route path="/low-level-design-and-machine-coding/responsive-slideshow" element={<ResponsiveSlideshow />} />
+      <Route path="/low-level-design-and-machine-coding/functional-modal-component" element={<FunctionalModalComponent />} />
       <Route path="/abhibus/editable-todo-list" element={<EditableToDoList />} />
       <Route path="/zampAi/nested-comments" element={<CreateNestedCommentsInReact />} />
       <Route path="/thoughtspot/use-memo-polyfill" element={<UseMemoHookPolyfill />} />
