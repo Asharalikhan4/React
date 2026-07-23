@@ -81,6 +81,11 @@ export const routesData = [
         id: 12,
         name: "Functional Modal Component",
         path: "functional-modal-component"
+      },
+      {
+        id: 13,
+        name: "Detect OverLapping Circle",
+        path: "detect-overlapping-circle"
       }
     ]
   },

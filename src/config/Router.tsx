@@ -33,6 +33,7 @@ import CreateNestedCommentsInReact from "../LowLevelDesignAndMachineCoding/Creat
 import UseMemoHookPolyfill from "../screens/useMemoHookPolyfill/useMemoHookPolyfill";
 import MultiStepperComponent from "../LowLevelDesignAndMachineCoding/MultiStepperComponent/MultiStepperComponent";
 import FunctionalModalComponent from "../LowLevelDesignAndMachineCoding/FunctionalModalComponent/FunctionalModalComponent";
+import DetectOverLappingCircle from "../LowLevelDesignAndMachineCoding/DetectOverLappingCircle/DetectOverLappingCircle";
 
 const Router = () => {
   return (
@@ -50,41 +51,21 @@ const Router = () => {
       <Route path="/throttling" element={<Throttling />} />
       <Route path="/use-ref-hook" element={<UseRefHook />} />
       <Route path="/lazy-loading" element={<LazyLoading />} />
-      <Route
-        path="EventBubblingAndCapturingAkaTrickling"
-        element={<EventBubblingAndCapturingAkaTrickling />}
-      />
+      <Route path="EventBubblingAndCapturingAkaTrickling" element={<EventBubblingAndCapturingAkaTrickling />} />
       <Route path="/useIdleHook" element={<UseIdleHook />} />
-      <Route
-        path="/search-with-autocomplete"
-        element={<SearchWithAutoComplete />}
-      />
-      <Route
-        path="/state-management/cookies-session-local-storage-indexdb"
-        element={<IndexDB />}
-      />
-      <Route
-        path="/low-level-design-and-machine-coding/create-a-nested-checkbox-tree-component"
-        element={<CreateANestedCheckboxTreeComponent />}
-      />
-      <Route
-        path="low-level-design-and-machine-coding/implement-feature-flag-component-in-react"
-        element={<FeatureFlagProvider><ImplementFeatureFlagComponentInReact /></FeatureFlagProvider>}
-      />
-      <Route
-        path="low-level-design-and-machine-coding/multi-stepper-component"
-        element={<MultiStepperComponent />}
-      />
-      <Route path="/low-level-design-and-machine-coding/switch-case-component"
-        element={<SwitchCaseComponent />} />
-      <Route path="/low-level-design-and-machine-coding/two-step-login-form"
-        element={<TwoStepLoginForm />} />
-      <Route path="/low-level-design-and-machine-coding/todo-list"
-        element={<TodoList />} />
+      <Route path="/search-with-autocomplete" element={<SearchWithAutoComplete />} />
+      <Route path="/state-management/cookies-session-local-storage-indexdb" element={<IndexDB />} />
+      <Route path="/low-level-design-and-machine-coding/create-a-nested-checkbox-tree-component" element={<CreateANestedCheckboxTreeComponent />} />
+      <Route path="low-level-design-and-machine-coding/implement-feature-flag-component-in-react" element={<FeatureFlagProvider><ImplementFeatureFlagComponentInReact /></FeatureFlagProvider>} />
+      <Route path="low-level-design-and-machine-coding/multi-stepper-component" element={<MultiStepperComponent />} />
+      <Route path="/low-level-design-and-machine-coding/switch-case-component" element={<SwitchCaseComponent />} />
+      <Route path="/low-level-design-and-machine-coding/two-step-login-form" element={<TwoStepLoginForm />} />
+      <Route path="/low-level-design-and-machine-coding/todo-list" element={<TodoList />} />
       <Route path="/low-level-design-and-machine-coding/search-with-pagination" element={<SearchWithPagingation />} />
       <Route path="/low-level-design-and-machine-coding/infinite-scroll-in-react" element={<InfiniteScrollInReact />} />
       <Route path="/low-level-design-and-machine-coding/responsive-slideshow" element={<ResponsiveSlideshow />} />
       <Route path="/low-level-design-and-machine-coding/functional-modal-component" element={<FunctionalModalComponent />} />
+      <Route path="/low-level-design-and-machine-coding/detect-overlapping-circle" element={<DetectOverLappingCircle />} />
       <Route path="/abhibus/editable-todo-list" element={<EditableToDoList />} />
       <Route path="/zampAi/nested-comments" element={<CreateNestedCommentsInReact />} />
       <Route path="/thoughtspot/use-memo-polyfill" element={<UseMemoHookPolyfill />} />
