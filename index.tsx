@@ -6,9 +6,9 @@ import App from "./App";
 const container = document.getElementById("app");
 const root = createRoot(container);
 root.render(
-  <ErrorBoundary>
+  // <ErrorBoundary>
     <BrowserRouter>
       <App />
-    </BrowserRouter>
-  </ErrorBoundary>,
+    </BrowserRouter>,
+  // </ErrorBoundary>,
 );

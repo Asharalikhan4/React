@@ -122,9 +122,9 @@ From the requirements for the website, we can finalize the routes that we are go
 
 To design the current system, we will need only two routes.
 
-- Home or Browse page (/): It will display the new arrival list, the recommended video list, and the videos by genre.
+- **Home or Browse page (/):** It will display the new arrival list, the recommended video list, and the videos by genre.
 
-- Single video page (/watch?video="video-slug"): This will show the single video details along with the video playback and suggestion list.
+- **Single video page (/watch?video="video-slug"):** This will show the single video details along with the video playback and suggestion list.
 
 The reason why the single video page is taking the video URL as a query parameter on the watch page is that we can also pass additional details in the parameter, like whether the video is subtitled or not, the time from which the video should start playing, etc.
 
@@ -134,7 +134,7 @@ Depending on the platform, we can have public as well as private pages that requ
 
 We can define outlets in React-Router-V6 to redirect the routes if not authroized.
 
-privateRoutes.js
+**privateRoutes.js**
 ```JavaScript
 import React from "react";
 import { Outlet, Navigate } from "react-router-dom";
@@ -148,7 +148,7 @@ const Private = () => {
 export default Private;
 ```
 
-publicRoutes.js
+**publicRoutes.js**
 ```JavaScript
 import React from 'react';
 import { Outlet, Navigate } from 'react-router-dom';
@@ -162,7 +162,7 @@ const Public = () => {
 export default Public;
 ```
 
-route.js
+**route.js**
 ```JavaScript
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/login";
@@ -190,3 +190,33 @@ const App = () => {
 
 export default App;
 ```
+
+There can be restrictions on the page as well, pushing the user to login or sign up to perform certain actions.
+
+Referencing both YouTube and Netflix, or any video streaming website, we can think of the following common components:
+- **Card:** Displays the video in the 16:9 ratio dimension or 4:3 dimension depending upon the resolution of the video; more on this later when we will discuss the video playback; thus, the dimension of this component will be dynamic. This should also play the video on user interactions like hovering.
+- **Video Player:** The most important component that will be incorporated in the cards for autoplaying will also be discussed in detail.
+- **Video details accordion or drawer:** This will display the video details upon clicking Show More or More Details.Modules:
+
+### Modules:
+We will need a single module to display the list of videos; now this list can be vertical (YouTube) as well as horizontal (YouTube and Netflix).
+
+The card and the module will both be presentational components that will have the local state only for navigation or lazy loading of the details.
+
+The data that has to be viewed in these components will be passed to them as props. This is known as the Hook/View component design pattern, which helps to maintain separation of concern while making the components reusable.
+
+In both applications, there is a provision to create a family account to onboard friends and family; thus, providing a good authentication and authorization experience is a vital part of the frontend application.
+
+Youtube, being a part of the Google family, allows single sign-on on Gmail's credentials along with two-factor authentication.
+
+Later, if you opt for the premium features, you can add limited users by using the email addresses of your friends and family to share it with them.
+
+Which means the email address is the primary key for authentication and authorization on Youtube.
+
+Similar to Netflix, you can login with an email and password for password-based authentication or a phone number + otp for password-less authentication, and then later take the email address as a secondary identifier.
+
+Providing quick access to the application is key to user retention, and then, using the email or phone number, the account can be shared with a limited set of users.
+
+After a successful login, either token-based or cookie-based authentication can be used. A token-based approach is well suited for the microservice architecture.
+
+Read more about [authentication](https://learnersbucket.com/tutorials/web/authenication-on-the-web-and-its-best-practices/) and authorization best practices.
