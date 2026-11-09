@@ -30,7 +30,7 @@ import InfiniteScrollInReact from "../LowLevelDesignAndMachineCoding/InfiniteScr
 import ResponsiveSlideshow from "../LowLevelDesignAndMachineCoding/ResponsiveSlideshow/ResponsiveSlideshow";
 import EditableToDoList from "../LowLevelDesignAndMachineCoding/EditableToDoList/EditableToDoList";
 import CreateNestedCommentsInReact from "../LowLevelDesignAndMachineCoding/CreateNestedCommentsInReact/CreateNestedCommentsInReact";
-import UseMemoHookPolyfill from "../screens/useMemoHookPolyfill/useMemoHookPolyfill";
+import UseMemoHookPolyfill from "../screens/UseMemoHookPolyfill/UseMemoHookPolyfill";
 import MultiStepperComponent from "../LowLevelDesignAndMachineCoding/MultiStepperComponent/MultiStepperComponent";
 import FunctionalModalComponent from "../LowLevelDesignAndMachineCoding/FunctionalModalComponent/FunctionalModalComponent";
 import DetectOverLappingCircle from "../LowLevelDesignAndMachineCoding/DetectOverLappingCircle/DetectOverLappingCircle";
