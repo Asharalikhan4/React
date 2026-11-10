@@ -24,5 +24,7 @@ const Worker = () => {
       <button onClick={runTask}>Run Heavy Task</button>
       {result && <p>Result: {result}</p>}
     </div>
-  )
+  );
 };
+
+export default Worker;
