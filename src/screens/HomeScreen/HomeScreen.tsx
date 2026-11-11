@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { NavLink } from 'react-router';
 import { topics, ContentType, CategoryKey } from '../../data/topics';
+import { usePageSEO } from '../../customHooks/usePageSEO';
 import {
   FaSearch,
   FaBookOpen,
@@ -14,6 +15,24 @@ import {
 } from 'react-icons/fa';
 
 const HomeScreen: React.FC = () => {
+  usePageSEO({
+    title: 'React Lab - Architecture & Machine Coding Masterclass',
+    description:
+      'A comprehensive educational platform featuring 60+ interactive React machine coding challenges, frontend system design blueprints, rendering patterns, and performance optimization guides.',
+    keywords: [
+      'React',
+      'Machine Coding',
+      'System Design',
+      'Frontend Architecture',
+      'React Hooks',
+      'Polyfills',
+      'Performance Optimization',
+      'Interview Questions',
+    ],
+    canonicalPath: '/',
+    type: 'website',
+  });
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState<'all' | ContentType | 'interview'>('all');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -69,9 +88,9 @@ const HomeScreen: React.FC = () => {
       {/* Hero Section */}
       <div className="bg-gradient-to-b from-blue-50/70 to-transparent rounded-3xl p-6 sm:p-10 mb-8 border border-blue-100/60">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold mb-4">
+          {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-semibold mb-4">
             <span>✨ Educational Knowledge Base</span>
-          </div>
+          </div> */}
           <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             React Architecture & Machine Coding
           </h1>

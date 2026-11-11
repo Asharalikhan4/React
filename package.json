@@ -1,11 +1,12 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "description": "react-learning",
+  "description": "React Architecture & Machine Coding Lab - Interactive LLD, Machine Coding Challenges, and Architectural Guides",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "generate:sitemap": "node scripts/generate-sitemap.js",
+    "build": "node scripts/generate-sitemap.js && parcel build index.html && cp -r public/* dist/"
   },
   "keywords": [
     "react"
