@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html",
     "generate:sitemap": "node scripts/generate-sitemap.js",
-    "build": "node scripts/generate-sitemap.js && parcel build index.html && cp -r public/* dist/"
+    "build": "node scripts/generate-sitemap.js && parcel build index.html && cp -r public/* dist/ && node scripts/fix-html.js"
   },
   "keywords": [
     "react"
